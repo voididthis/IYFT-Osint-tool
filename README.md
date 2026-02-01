@@ -3,3 +3,5 @@
 # git clone https://github.com/voididthis/IYFT-Osint-tool
 # cd IYFT-Osint-tool
 # python main.py
+# libraries:
+zlib base64 colorama requests
